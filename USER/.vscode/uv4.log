@@ -1,0 +1,11 @@
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'MPU6050'
+compiling open_mv_usart.c...
+..\HARDWARE\Open_MV\open_mv_usart.c(111): warning:  #1-D: last line of file ends without a newline
+  }
+..\HARDWARE\Open_MV\open_mv_usart.c: 1 warning, 0 errors
+linking...
+Program Size: Code=33576 RO-data=5320 RW-data=168 ZI-data=2496  
+FromELF: creating hex file...
+"..\OBJ\MPU6050.axf" - 0 Error(s), 1 Warning(s).
+Build Time Elapsed:  00:00:00
