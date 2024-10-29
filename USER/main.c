@@ -85,7 +85,6 @@ int main(void)
 	} 								//进行DMP初始化
 	MiniBalance_PWM_Init(7199,0);   //初始化PWM 10KHZ，用于驱动电机 ,PWM最多7200
 	TIM3_Config(1999,71);//防止中断影响初始化，最后进行定时器中断的定义
-	TIM1_Config(999,71);
 	Encoder_Init_TIM2();            //=====编码器接口
     Encoder_Init_TIM4();            //=====初始化编码器2
 	OLED_ShowString(3,1,"finsh");
@@ -94,7 +93,6 @@ int main(void)
 /*************************************************************/	
 	FSM_Init();//待机 ,状态机初始化
 	Motor_Date_Init();//电机状态、输出最大值初始化
-	TIM_ITConfig(TIM3,TIM_IT_Update,DISABLE);//关闭电机计算输出//在按键里开启
 	PID_Date_Init();
  	while(1)
 	{

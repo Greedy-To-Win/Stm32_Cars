@@ -64,7 +64,6 @@ void  EXTI4_IRQHandler(void)     //外部中断函数
 		{
 			Active_FSM.State_change=1;
 			Active_FSM.State=Upright_State;//开机直立
-			TIM_ITConfig(TIM3,TIM_IT_Update,ENABLE);//开启电机计算输出
 		}
         if (GPIO_ReadInputDataBit(GPIOA, GPIO_Pin_4) == 0&&Active_FSM.State!=Holding_State)         //如果4号脚为低电平
 		{
